@@ -1,0 +1,54 @@
+.DS_Store
+
+application/config/config.php
+application/config/database.php
+
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+!application/*/.htaccess
+#archivos para que se descarten
+#.htaccess
+/application/config/config.php
+/application/config/database.php
+
+/public/tinymce/plugins/tiny_mce_wiris/cache
+/public/tinymce/plugins/tiny_mce_wiris/formulas
+public/json/*
+composer.lock
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
+
+
+# utilerias del servidor
+utils/
+v2/
+
+
+#directorio CI
+user_guide/
+
+#archivos .env
+.env
+.env.development
