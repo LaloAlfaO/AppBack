@@ -15,11 +15,29 @@ class Login extends CI_Controller {
   }
 	public function index()
 	{
-    //recibir post que manden del front procesarlas y mandar los datos o solo una bandera
-    $datos = array('response' => true,
-    'msg' => true,//true o false si encontro al usuario
-    //usuario =  datos del usuario que se logueo
-    );
-    $this->output->set_content_type('application/json')->set_output(json_encode( $datos ));
+    /*no debe regresar nada*/
 	}
+  /**
+   * ejecuta la autenticacion de un usario para acceder a la app
+   * @author E_apanco
+   * @param post con el usuario y el pasword para poder buscar al usuario y accedes
+   * @return data con mensaje de error y con los datos que requiera el front
+   */
+  public function ingresa(){
+      //recibir post que manden del front procesarlas y mandar los datos o solo una bandera
+      $data = array('response' => true,
+      'msg' => true,//true o false si encontro al usuario
+      //usuario =  datos del usuario que se logueo
+    );
+    $this->output->set_content_type('application/json')->set_output(json_encode( $data ));
+  }
+  /**
+   * ejecuta la subida de un archivo al servidr a partir del nombre del formulario y el nombre que se le desea dar al archivo
+   * @author E_apanco
+   * @param post con datos del usuario a editar
+   * @return data con mensaje de error y con los datos que requiera el front
+   */
+   public function editar_usuario(){
+
+   }
 }
