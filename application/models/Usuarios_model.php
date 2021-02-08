@@ -8,4 +8,8 @@ class Usuarios_model extends CI_Model {
     $this->db->where('usuario_pwd',$passwd);
     return $this->db->get()->result_array();
   }
+
+  public function save_user($data){
+    return $this->db->insert($this->_tabla,$data);    
+  }
 }

@@ -48,13 +48,5 @@ class Login extends CI_Controller {
     $this->output->set_content_type('application/json')->set_output(json_encode( $data ));
 
   }
-  /**
-   * ejecuta la subida de un archivo al servidr a partir del nombre del formulario y el nombre que se le desea dar al archivo
-   * @author E_apanco
-   * @param post con datos del usuario a editar
-   * @return data con mensaje de error y con los datos que requiera el front
-   */
-   public function editar_usuario(){
 
-   }
 }
